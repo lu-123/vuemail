@@ -1,4 +1,4 @@
-import { ADDCOUNT, ADDTOCART, ADDCOUNTS, DESCOUNTS, DELBTNCARTLIST } from './mutations-types'
+import { ADDCOUNT, ADDTOCART, ADDCOUNTS, DESCOUNTS} from './mutations-types'
 export default {
   addToCart(context, payload) {
     return new Promise((resolve, reject) => {
@@ -19,8 +19,5 @@ export default {
   },
   desCartListCount(context, payload) {
     context.commit(DESCOUNTS, payload);
-  },
-  delBtnCartList(context, payload) {
-    context.commit(DELBTNCARTLIST, payload);
   }
 }
